@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GITANDO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="z0se" content="Gitando articoli">
+    <meta name="description" content="articoli kayak">
+    <meta name="keywords" content="travel, viaggi, gite">
+    <link href="#" rel="icon">
+    <link rel="stylesheet" href="css/bootstrap4.reduct.css">
+    <script src="https://kit.fontawesome.com/d5a9b2b93b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid fixed-top">
+        <header class="row justify-content-around bg-bright">
+            <h1 class="d-none col-md-2 d-md-block offset-lg-1">
+                <a href="index.html"><img src="image/gitando_logo.svg" alt="gitando logo" width="108px"></a>
+            </h1>
+
+            <nav class="col-12 col-md-10 col-lg-8 navbar navbar-expand-md navbar-light">
+                <a class="d-block d-md-none navbar-brand mx-auto" href="index.html"><img src="image/gitando_logo.svg" alt="gitando logo" width="108px"></a>
+
+                <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
+                    <hr id="over" class="overstart">
+                    <hr id="under" class="understart">
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul id="vw" class="navbar-nav w-100 d-flex justify-content-between">
+                        <li class="search-form">
+                            <form>
+                                <i class="fa fa-search text-dark"></i>
+                                <input type="text" name="" placeholder="Search" autocorrect="off" autocapitalize="off" autocomplete="off">
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Adrenalina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Avventura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Panorama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Relax</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">#News</a>
+                        </li>
+                        <li class="d-none d-md-block nav-item align-self-center pr-2">
+                            <a href="#">
+                                <i id="search" class="fa fa-search text-dark"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="login" class="pl-2">
+                    <a href="#">
+                        <i class="far fa-id-card text-dark"></i>
+                    </a>
+                </div>
+                <button id="x" class="d-none border-0 p-0">
+                    <p id="sx" class="sxstart">&vert;</p>
+                    <p id="dx" class="dxstart">&vert;</p>
+                </button>
+            </nav>
+            <div class="d-none col-lg-1 d-lg-block"></div>
+        </header>
+        <div id="overlay"></div>
+
+        <!-- aside filtri -->
+        <aside class="row bg-white">
+            <div class="order-1 d-none col-md-1 d-md-block"></div>
+            <div id="filter-option" class="order-2 order-sm-3 col-12 col-sm-6 col-md-5 fluid-medium">
+                <div class="d-flex justify-content-between bg-middle rounded-bottom">
+                    <a href="article_ciclotour.html"><img src="image/bici.svg" alt="persona che corre in bici"></a>
+                    <img id="choice" src="image/canoa.svg" alt="persona con remo in mano su una canoa">
+                    <a href="article_parapendio.html"><img src="image/paracadutismo.svg" alt="persona con paracadute"></a>
+                    <a href="article_sci.html"><img src="image/sci.svg" alt="persona che scia"></a>
+                    <a href="article_trekking.html"><img src="image/trekking.svg" alt="persona che scala"></a>
+                    <a href="article_fuoristrada.html"><img src="image/4x4.svg" alt="jeep 4x4"></a>
+                </div>
+            </div>
+            <div class="order-3 order-sm-2 col-12 col-sm-6 col-md-5 py-1">
+                <ul class="nav nav-pills justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">FILTRA PER:</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">durata</a>
+                        <div class="dropdown-menu">
+                            <button type="button" class="dropdown-item btn-tag">mezza giornata</button>
+                            <button type="button" class="dropdown-item btn-tag">1 giornata</button>
+                            <button type="button" class="dropdown-item btn-tag">2-3 giorni</button>
+                            <button type="button" class="dropdown-item btn-tag">tutte le gite</button>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">periodo</a>
+                        <div class="dropdown-menu">
+                            <button type="button" class="dropdown-item btn-tag">tutto l'anno</button>
+                            <button type="button" class="dropdown-item btn-tag">aprile-agosto</button>
+                            <button type="button" class="dropdown-item btn-tag">dicembre-marzo</button>
+                            <button type="button" class="dropdown-item btn-tag">settembre-novembre</button>
+                            <button type="button" class="dropdown-item btn-tag">tutte le gite</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-4 d-none col-md-1 d-md-block"></div>
+        </aside>
+    </div>
+
+    <!-- main -->
+    <main id="first-spacer" class="text-center">
+
+        <!-- card prodotti -->
+        <section class="container-fluid grad-bright cornice">
+            <div class="row">
+                <div id="gita1" class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="filtri-tag bg-white rounded-top">
+                        <figure class="row m-0 rounded-top" id="ticino-kayak">
+                            <i class="bg-middle icon">
+                                <img src="image/canoa.svg" alt="persona con remo in mano su una canoa">
+                            </i>
+                        </figure>
+                        <article class="card-body">
+                            <h4 class="card-title">Ticino kayak</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem viverra a. Cras a elementum nibh. Etiam tincidunt non enim eget...</p>
+                            <button class="btn bg-middle text-white w-100">
+                                <a href="#" class="text-white">CURIOSO?</a>
+                            </button>
+                        </article>
+                        <div class="d-none">
+                            <span>tutte le gite</span>
+                            <span>aprile-agosto</span>
+                            <span>1 giornata</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid text-center bg-middle pt-5 pb-2">
+        <div class="row mx-md-5 px-lg-5">
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="icon sdks and beta">
+                    <h5><b>SDKs and Betas</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="icon sdks and beta">
+                    View downloads &rsaquo;</a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="documentation">
+                    <h5><b>Cookie Policy</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="documentation">
+                    Read document &rsaquo;</a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="session videos">
+                    <h5><b>Session Videos</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="session videos">
+                    Watch videos &rsaquo;</a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="discussion forums">
+                    <h5><b>Faq Forum</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="discussion forums">
+                    View forums &rsaquo;</a>
+            </div>
+            <hr class="w-100 mb-0">
+            <span class="col-12">
+                <small>powered by ZOOSE, contattaci: <u href="mailto:andrea.zucchetti@me.com">andrea.zucchetti@me.com</u> </small>
+            </span>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/style.js"></script></html>

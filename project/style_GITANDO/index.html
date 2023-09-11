@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GITANDO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="z0se" content="Gitando">
+    <meta name="description" content="home gitando">
+    <meta name="keywords" content="travel, viaggi, gite">
+    <link href="#" rel="icon">
+    <link rel="stylesheet" href="css/bootstrap4.reduct.css">
+    <script src="https://kit.fontawesome.com/d5a9b2b93b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid fixed-top">
+        <header class="row justify-content-around bg-bright">
+            <h1 class="d-none col-md-2 d-md-block offset-lg-1">
+                <a href="index.html"><img src="image/gitando_logo.svg" alt="gitando logo" width="108px"></a>
+            </h1>
+
+            <nav class="col-12 col-md-10 col-lg-8 navbar navbar-expand-md navbar-light">
+                <a class="d-block d-md-none navbar-brand mx-auto" href="index.html"><img src="image/gitando_logo.svg" alt="gitando logo" width="108px"></a>
+
+                <button class="navbar-toggler border-0 p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
+                    <hr id="over" class="overstart">
+                    <hr id="under" class="understart">
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul id="vw" class="navbar-nav w-100 d-flex justify-content-between">
+                        <li class="search-form">
+                            <form>
+                                <i class="fa fa-search text-dark"></i>
+                                <input type="text" name="" placeholder="Search" autocorrect="off" autocapitalize="off" autocomplete="off">
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Adrenalina</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Avventura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Panorama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">#Relax</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">#News</a>
+                        </li>
+                        <li class="d-none d-md-block nav-item align-self-center pr-2">
+                            <a href="#">
+                                <i id="search" class="fa fa-search text-dark"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="login" class="pl-2">
+                    <a href="#">
+                        <i class="far fa-id-card text-dark"></i>
+                    </a>
+                </div>
+                <button id="x" class="d-none border-0 p-0">
+                    <p id="sx" class="sxstart">&vert;</p>
+                    <p id="dx" class="dxstart">&vert;</p>
+                </button>
+            </nav>
+            <div class="d-none col-lg-1 d-lg-block"></div>
+        </header>
+        <div id="overlay"></div>
+
+        <!-- aside -->
+        <aside id="category-menu" class="row text-center bg-middle">
+            <div class="col-12 navbar navbar-expand">
+
+                <button id="rightArrow" class="d-none d-sm-none border-right"><i class="fas fa-chevron-left"></i></button>
+
+                <button id="leftArrow" class="d-sm-none border-left"><i class="fas fa-chevron-right"></i></button>
+
+                <div class="mx-auto">
+                    <ul id="scroll" class="navbar-nav w-100 d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link text-white mr-lg-4 mr-md-3 mr-2" href="article_ciclotour.html"><img src="image/bici.svg" alt="persona che corre in bici">
+                                <p>Ciclotour</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-lg-4 mx-md-3 mr-2" href="article_kayak.html"><img src="image/canoa.svg" alt="persona con remo in mano su una canoa">
+                                <p>Kayak</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-lg-4 mx-md-3 mr-1" href="article_parapendio.html"><img src="image/paracadutismo.svg" alt="persona con paracadute">
+                                <p>Parapendio</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-lg-4 mx-md-3 ml-1" href="article_sci.html"><img src="image/sci.svg" alt="persona che scia">
+                                <p>Sci</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white mx-lg-4 mx-md-3 ml-2" href="article_trekking.html"><img src="image/trekking.svg" alt="persona che scala">
+                                <p>Trekking</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white ml-lg-4 ml-md-3 ml-2" href="article_fuoristrada.html"><img src="image/4x4.svg" alt="jeep 4x4">
+                                <p>Fuoristrada</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- main -->
+    <main class="text-center">
+        <div class="container-fluid green-filter">
+            <section class="slider">
+                <div class="row">
+                    <div class="col-12 imgContainer">
+                        <div class="image">
+                            <img src="image/wow_tour.jpg" alt="gruppo di ragazzi in montagna">
+                        </div>
+                        <div class="image">
+                            <img src="image/Sci_snowboard.jpg" alt="sciatori su seggiovia">
+                        </div>
+                        <div class="image">
+                            <img src="image/Pagaiate_tranquille.jpg" alt="rafting tra la schiuma">
+                        </div>
+                    </div>
+                    <div class="col-12 offset-sm-2 col-sm-8 offset-lg-6 col-lg-5">
+                        <!-- slider -->
+                        <div id="productSlider" class="carousel carousel-fade slide pr-lg-5 py-lg-0 py-4" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="content p-4 bg-white">
+                                        <small>
+                                            26 gennaio 2020
+                                        </small>
+                                        <h2>
+                                            <strong>WOW! Tour 2020</strong>
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem.
+                                        </p>
+                                        <button class="btn bg-middle text-white">
+                                            <a href="article.html" class="text-white">SEI CURIOSO?</a>
+                                        </button>
+                                        <img src="image/linguetta.svg" alt="fumetto">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="content p-4 bg-white">
+                                        <small>
+                                            15 novembre 2020
+                                        </small>
+                                        <h2>
+                                            <strong>Sci o snowboard?</strong>
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem.
+                                        </p>
+                                        <button class="btn bg-middle text-white">
+                                            <a href="article_sci.html" class="text-white">PRENOTA SUBITO!</a>
+                                        </button>
+                                        <img src="image/linguetta.svg" alt="fumetto">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="content p-4 bg-white">
+                                        <small>
+                                            14-16 aprile 2021
+                                        </small>
+                                        <h2>
+                                            <strong>Due pagaiate tranquille</strong>
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem.
+                                        </p>
+                                        <button class="btn bg-middle text-white">
+                                            <a href="article_kayak.html" class="text-white">SALI A BORDO?</a>
+                                        </button>
+                                        <img src="image/linguetta.svg" alt="fumetto">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- indicators -->
+                            <ol class="carousel-indicators indicators">
+                                <li data-target="#productSlider" data-slide-to="0" class="active"></li>
+                                <li data-target="#productSlider" data-slide-to="1"></li>
+                                <li data-target="#productSlider" data-slide-to="2"></li>
+                            </ol>
+                            <!-- indicators -->
+                        </div>
+                        <!-- slider -->
+                    </div>
+                    <div class="d-none col-sm-2 col-lg-1 d-md-block"></div>
+                </div>
+
+                <div class="searchbox bg-bright rounded-top">
+                    <div class="row">
+                        <form class="col-md-12">
+                            <input type="text" name="" placeholder="Cosa vorresti fare?" autocorrect="off" autocapitalize="off" autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="container-fluid">
+            <section>
+                <div class="row px-4 py-5 p-md-5">
+                    <article class="col-md-5 col-lg-4 p-xl-5 offset-lg-1">
+                        <span>
+                            <h3><strong>Vieni a divertirti con noi ;&rpar;</strong></h3>
+                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem viverra a. Cras a elementum nibh. Etiam tincidunt non enim eget rutrum. Nam ac diam eget nulla ultricies volutpat. Cras nunc velit, eleifend eget dui nec, viverra bibendum ipsum. Mauris hendrerit quam elementum, scelerisque ipsum iaculis, dictum orci. Aenean venenatis sollicitudin scelerisque.</p>
+                        </span>
+                    </article>
+                    <figure class="col-md-6 col-lg-5 offset-md-1" id="img-fun">
+                    </figure>
+                    <div class="d-none col-lg-1 d-lg-block"></div>
+                </div>
+            </section>
+        </div>
+        <!-- card prodotti -->
+        <section class="container-fluid grad-bright cornice">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="bg-white rounded-top">
+                        <figure class="row m-0 rounded-top" id="jeep-trial">
+                            <i class="bg-middle icon">
+                                <img src="image/4x4.svg" alt="jeep 4x4">
+                            </i>
+                        </figure>
+                        <article class="card-body">
+                            <h4 class="card-title">Jeep Trial</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem viverra a. Cras a elementum nibh. Etiam tincidunt non enim eget...</p>
+                            <button class="btn bg-middle text-white w-100">
+                                <a href="#" class="text-white">CURIOSO?</a>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="bg-white rounded-top">
+                        <figure class="row m-0 rounded-top" id="avventura-grotta">
+                            <i class="bg-middle icon">
+                                <img src="image/trekking.svg" alt="persona che scala">
+                            </i>
+                        </figure>
+                        <article class="card-body">
+                            <h4 class="card-title">Avventura in grotta</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem viverra a. Cras a elementum nibh. Etiam tincidunt non enim eget...</p>
+                            <button class="btn bg-middle text-white w-100">
+                                <a href="#" class="text-white">CURIOSO?</a>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="bg-white rounded-top">
+                        <figure class="row m-0 rounded-top" id="ticino-kayak">
+                            <i class="bg-middle icon">
+                                <img src="image/canoa.svg" alt="persona con remo in mano su una canoa">
+                            </i>
+                        </figure>
+                        <article class="card-body">
+                            <h4 class="card-title">Ticino kayak</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem viverra a. Cras a elementum nibh. Etiam tincidunt non enim eget...</p>
+                            <button class="btn bg-middle text-white w-100">
+                                <a href="#" class="text-white">CURIOSO?</a>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="d-none col-sm-6 d-sm-block d-lg-none mb-4">
+                    <div class="bg-white rounded-top">
+                        <figure class="row m-0 rounded-top" id="piani-erna">
+                            <i class="bg-middle icon">
+                                <img src="image/paracadutismo.svg" alt="persona con paracadute">
+                            </i>
+                        </figure>
+                        <article class="card-body">
+                            <h4 class="card-title">Fly piani d'Erna</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue risus eros, at dapibus lorem viverra a. Cras a elementum nibh. Etiam tincidunt non enim eget...</p>
+                            <button class="btn bg-middle text-white w-100">
+                                <a href="#" class="text-white">CURIOSO?</a>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid text-center bg-middle pt-5 pb-2">
+        <div class="row mx-md-5 px-lg-5">
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="icon sdks and beta">
+                    <h5><b>SDKs and Betas</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="icon sdks and beta">
+                    View downloads &rsaquo;</a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="documentation">
+                    <h5><b>Cookie Policy</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="documentation">
+                    Read document &rsaquo;</a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="session videos">
+                    <h5><b>Session Videos</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="session videos">
+                    Watch videos &rsaquo;</a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 pb-4">
+                <a class="text-decoration-none text-white" href="#" title="discussion forums">
+                    <h5><b>Faq Forum</b></h5>
+                    <p>Possimus enim aliquam, nisi pariatur nam autem, optio non enim ipsa rem ipsum.</p>
+                </a>
+                <a href="#" title="discussion forums">
+                    View forums &rsaquo;</a>
+            </div>
+            <hr class="w-100 mb-0">
+            <span class="col-12">
+                <small>powered by ZOOSE, contattaci: <u href="mailto:andrea.zucchetti@me.com">andrea.zucchetti@me.com</u> </small>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/style.js"></script></html>

@@ -1,0 +1,94 @@
+/* STILE GENERALE */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  color: #eee;
+  letter-spacing: 1px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(46.03deg, #2D27DF 14.21%, #CB2376 83.82%);
+  text-align: center;
+}
+
+/* WIDGET */
+.widgetWrap {
+  max-width: 600px;
+  padding: 10px 30px 30px 30px;
+  margin: 10px;
+  border-radius: 20px;
+  background: linear-gradient(46.03deg, #101023 14.21%, #192155 83.82%);
+  animation: shadow-timer 4s linear infinite;
+}
+
+@keyframes shadow-timer {
+  0% {
+    box-shadow: 30px 30px black, -30px -30px #00c6c6;
+  }
+  25% {
+    box-shadow: 30px -30px black, -30px 30px #00c6c6;
+  }
+  50% {
+    box-shadow: -30px -30px black, 30px 30px #00c6c6;
+  }
+  75% {
+    box-shadow: -30px 30px black, 30px -30px #00c6c6;
+  }
+  100% {
+    box-shadow: 30px 30px black, -30px -30px #00c6c6;
+  }
+}
+
+h1 {
+  background: linear-gradient(46.03deg, #CB2376 14.21%, #FF00D6 83.82%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* (B) QUESTION */
+#quizQn {
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+/* (C) ANSWERS */
+#quizAns {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+#quizAns input[type=radio] {
+  display: none;
+}
+
+#quizAns label {
+  background: #00e6e6;
+  color: #101023;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#quizAns label:hover {
+  background-color: #00c6c6;
+}
+
+#quizAns label.correct {
+  background-color: #0AC70A;
+}
+
+#quizAns label.wrong {
+  background-color: #CB2376;
+}

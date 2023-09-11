@@ -1,0 +1,152 @@
+{% comment %}Define variables{% endcomment %}
+{% assign text = "Questo sito utilizza cookie tecnici, analitici e di profilazione di terze parti. Per maggiori informazioni e/o per negare il consenso a tutti o parte di essi, si rinvia all'apposita " %}
+{% assign more_info = '"Cookie Policy"' %}
+{% assign privacy_url = "https://maglietteeco.it/pages/privacy-e-cookie-policy#cookie" %}
+{% assign button_text = "ACCETTA" %}
+<style type="text/css">
+    @-webkit-keyframes slideUp{
+        0%{
+            -webkit-transform:translateY(66px);
+            transform:translateY(66px)
+        }
+        100%{
+            -webkit-transform:translateY(0);
+            transform:translateY(0)
+        }
+    }
+    @keyframes slideUp{
+        0%{
+            -webkit-transform:translateY(66px);
+            -ms-transform:translateY(66px);
+            transform:translateY(66px)
+        }
+        100%{
+            -webkit-transform:translateY(0);
+            -ms-transform:translateY(0);
+            transform:translateY(0)
+        }
+    }
+    #se-cookies-message {
+        color: #000; /* Change text color here */
+        background-color: #fff; /* Change background color here */
+        padding: 10px;
+        width: calc(100% - 40px);
+        margin: auto;
+        border-radius: 5px;
+        text-align: center;
+        position: fixed;
+        bottom:20px;
+        left:0;
+        right:0;
+        z-index: 100000;
+        box-shadow: 0 0 5px rgba(0,0,0,0.4);
+        opacity: 0;
+        visibility: hidden;
+        font-size: 12px
+    }
+    #se-cookies-message.se-cookies-message-open {
+        opacity: 1;
+        visibility: visible;
+        animation-duration:.8s;
+        -webkit-animation-duration:.8s;
+        -moz-animation-duration:.8s;
+        -o-animation-duration:.8s;
+        -webkit-animation-name:slideUp;
+        animation-name:slideUp;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between
+    }
+    #se-accept-cookies-checkbox {
+        color: #fff;
+        background-color: #3e5931;
+        transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
+        -webkit-transition: background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        text-decoration: none;
+        font-size: 10px;
+        letter-spacing: .08em;
+        padding: 8px 15px;
+        width: 100%
+    }
+    #se-accept-cookies-checkbox:hover {
+        opacity: 0.8
+    }
+    .se-cookies-text {
+        padding: 0 0 10px 0
+    }
+    .se-cookies-text a {
+        text-decoration: underline;
+    }
+    @media screen and (min-width: 750px) {
+        #se-cookies-message {
+            width: 80%;
+            bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px
+        }
+        #se-cookies-message.se-cookies-message-open {
+            flex-direction: row
+        }
+        #se-accept-cookies-checkbox {
+            font-size: 16px;
+            width: auto
+        }
+        .se-cookies-text {
+        padding: 0 15px 0 0;
+        text-align: left
+        }  
+    }
+</style>
+<div id="se-cookies-message-container">
+    <div id="se-cookies-message">
+        <div class="se-cookies-text">
+            {{text}} <a href="{{privacy_url}}">{{more_info}}</a>
+        </div>
+        <a href="javascript:SE_CloseCookiesWindow();" id="se-accept-cookies-checkbox">{{button_text}}</a>
+    </div>
+</div>
+<script>
+  function SE_setCookie (name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  }
+  function SE_getCookie (name) {
+    var pair = document.cookie.match(new RegExp(name + '=([^;]+)'));
+    return !!pair ? pair[1] : null;
+  }
+  var cookiesName = 'cookies_accepted';
+  function SE_CheckCookies () {
+    if(!SE_getCookie(cookiesName)) {
+      var cookies_message = document.getElementById("se-cookies-message");
+      cookies_message.className += " se-cookies-message-open";
+    }
+  }
+  function SE_CloseCookiesWindow () {
+    SE_setCookie(cookiesName, true, 9999);
+    document.getElementById("se-cookies-message-container").removeChild(document.getElementById("se-cookies-message"));
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    SE_CheckCookies();
+  });
+</script>

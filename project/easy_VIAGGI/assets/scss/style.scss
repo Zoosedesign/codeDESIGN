@@ -1,0 +1,114 @@
+/* https://codepen.io/TurkAysenur/pen/LYRKpWe */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// elementi stile pagina parziali
+@import 'partials/header';
+@import 'partials/slider';
+
+// -----------------------------
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+textarea:focus, input:focus {
+    outline: none !important;
+}
+
+.nav-link,
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.rounded-6 {
+    border-radius: 3rem;
+}
+
+.rounded-te-0 {
+    border-top-right-radius: 0.4rem !important;
+}
+
+.rounded-bs-0 {
+    border-bottom-left-radius: 0.3rem !important;
+}
+
+.rounded-be-0 {
+    border-bottom-right-radius: 0.3rem !important;
+}
+
+.shadow-int {
+    box-shadow: 5px 5px 5px #ddd inset;
+}
+
+.bg-amazing {
+    background: linear-gradient(336deg, rgba(92, 200, 235, .8), rgba(33, 37, 41, 0) 70.71%), linear-gradient(127deg, rgba(48, 108, 244, .8), rgba(33, 37, 41, 0) 70.71%);
+}
+
+.bg-line {
+    background: linear-gradient(0deg, transparent calc(60% - 1px), #f5c344 calc(60% - 1px), #f5c344 calc(60% + 1px), transparent calc(60% + 1px));
+}
+
+.bg-opacity {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+img {
+    filter: opacity(#306cf4)
+}
+
+header img {
+    height: 32px;
+}
+
+header .nav-item.bg-primary,
+#saldi .card-body a,
+#summer .card-body a {
+    animation: shadow-timer 4s linear infinite;
+}
+
+@keyframes shadow-timer {
+    0% {
+        box-shadow: 5px 5px #f5c344, -5px -5px #5cc8eb;
+    }
+
+    25% {
+        box-shadow: 5px -5px #f5c344, -5px 5px #5cc8eb;
+    }
+
+    50% {
+        box-shadow: -5px -5px #f5c344, 5px 5px #5cc8eb;
+    }
+
+    75% {
+        box-shadow: -5px 5px #f5c344, 5px -5px #5cc8eb;
+    }
+
+    100% {
+        box-shadow: 5px 5px #f5c344, -5px -5px #5cc8eb;
+    }
+}
+
+#summer .card-img-overlay {
+    left: auto;
+}
+
+#saldi .card-body,
+#summer .card-body {
+    height: 250px;
+}
+
+@media (max-width: 767px) {
+
+    #saldi .card-body,
+    #summer .card-body {
+        height: 300px;
+    }
+}

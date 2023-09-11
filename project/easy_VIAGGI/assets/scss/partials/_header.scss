@@ -1,0 +1,29 @@
+header {
+    z-index: 1;
+    transform-style: flat;
+}
+
+header .dropdown-menu {
+    margin-top: 22px !important;
+    transition: all 2s;
+    z-index: 0 !important;
+}
+
+header input::placeholder {
+    color: #999 !important;
+}
+
+header input[type="search"] {
+    width: 200px;
+    transition: all 1s ease;
+}
+
+header input[type="search"]:focus {
+    width: 260px;
+}
+
+header .dropdown-menu {
+    z-index: 0;
+    transform-style: flat;
+    transform: none;
+}
