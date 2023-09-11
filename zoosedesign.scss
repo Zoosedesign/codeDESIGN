@@ -1,0 +1,135 @@
+// ----- COLORI SITO -----
+$company-day: rgba(242, 208, 167, 1);
+$company-100: rgba(185, 191, 3, 1);
+$company-200: rgba(135, 140, 2, 1);
+$company-300: rgba(89, 83, 1, 1);
+$company-night: rgba(88, 110, 140, 1);
+
+// colori bootstrap
+$primary: #0d6efd;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+
+$white: #fff;
+$light: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$secondary: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$dark: #212529;
+$black: #000;
+
+// ----- STILI GENRALI -----
+* {
+  letter-spacing: 1px !important;
+  vertical-align: baseline !important;
+  line-height: 1 !important;
+  /* la imposta all'altezza del carattere senza spazi extra */
+}
+
+// eliminare bordi al clic, form e imput
+:focus {
+  box-shadow: none;
+  border-color: $company-day;
+}
+
+// per dare l'hover ai bg dei colori company
+.btn:hover {
+  filter: brightness(70%);
+}
+
+// ----- COLORI DI SFONDO -----
+.bg-day {
+  background: $company-day;
+}
+
+.bg-100 {
+  background: $company-100;
+}
+
+.bg-200 {
+  background: $company-200;
+}
+
+.bg-300 {
+  background: $company-300;
+}
+
+.bg-night {
+  background: $company-night;
+}
+
+
+// linea di sfondo centrale per titoli
+.bg-line {
+  background: linear-gradient(0deg, transparent calc(60% - 1px), $company-100 calc(60% - 1px), $company-100 calc(60% + 1px), transparent calc(60% + 1px));
+}
+
+// per creare texture
+.bg-wallpaper {
+  background: linear-gradient(45deg,
+      $company-night 25%,
+      $company-night 25%,
+      $black 50%,
+      $company-night 50%,
+      $company-night 75%,
+      $black 75%,
+      $black);
+  background-size: 50px 50px;
+}
+
+// ----- GESTIONE TESTO -----
+.text-day {
+  color: $company-day;
+}
+
+.text-100 {
+  color: $company-100;
+}
+
+.text-200 {
+  color: $company-200;
+}
+
+.text-300 {
+  color: $company-300;
+}
+
+.text-night {
+  color: $company-night;
+}
+
+// testo grande con grandezza minima (20vw) e massima (10rem)
+.fs-0 {
+  font-size: min(20vw, 10rem);
+}
+
+// per gestire righe massime testo (...)
+.truncate-one {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.truncate-three {
+  @extend .truncate-one;
+  -webkit-line-clamp: 3;
+}
+
+.truncate-six {
+  @extend .truncate-one;
+  -webkit-line-clamp: 6;
+}
+
+// ----- GESTIONE IMMAGINE -----
+// per rendere uguali dimensioni immagini card
+.fit {
+  aspect-ratio: 1/1.5;
+  object-fit: fit;
+}
