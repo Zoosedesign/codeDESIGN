@@ -1,0 +1,38 @@
+// slider animation
+$timing: 0.5s;
+
+.prev-in {
+    animation: topIn $timing 1;
+}
+
+.prev-out {
+    animation: bottomOut $timing 1;
+}
+
+.next-in {
+    animation: bottomOut $timing 1 reverse;
+}
+
+.next-out {
+    animation: topIn $timing 1 reverse;
+}
+
+@keyframes bottomOut {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes topIn {
+    0% {
+        transform: translate(0, -100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

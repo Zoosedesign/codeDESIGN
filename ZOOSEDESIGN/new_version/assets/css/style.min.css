@@ -1,0 +1,1 @@
+.prev-in{animation:topIn .5s 1}.prev-out{animation:bottomOut .5s 1}.next-in{animation:bottomOut .5s 1 reverse}.next-out{animation:topIn .5s 1 reverse}@keyframes bottomOut{0%{transform:translate(0, 0)}100%{transform:translate(0, 100%)}}@keyframes topIn{0%{transform:translate(0, -100%)}100%{transform:translate(0, 0)}}

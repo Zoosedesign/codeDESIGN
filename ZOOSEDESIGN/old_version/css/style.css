@@ -1,0 +1,842 @@
+:focus,
+:active {
+    outline: none !important;
+}
+
+::active {
+    border: none !important;
+    outline: none !important
+}
+
+/* hide scrollbar */
+#swipe::-webkit-scrollbar,
+#swipe2::-webkit-scrollbar,
+#swipe3::-webkit-scrollbar {
+    display: none
+}
+
+#swipe,
+#swipe2,
+#swipe3 {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none
+        /* Firefox */
+}
+
+p:last-child {
+    margin-bottom: 0
+}
+
+.m-30 {
+    margin: 30px
+}
+
+.px-15 {
+    padding: 0 15px
+}
+
+.px-30 {
+    padding: 0 30px
+}
+
+.mb-60 {
+    margin-bottom: 60px
+}
+
+.pb-60 {
+    padding-bottom: 60px
+}
+
+/* colori */
+footer a,
+footer small,
+.text-gray {
+    color: #A5B9CC
+}
+
+.bg-gray {
+    background: #A5B9CC
+}
+
+.text-lime {
+    color: #d2d500
+}
+
+.bg-lime {
+    background: #d2d500
+}
+
+.text-green {
+    color: #25D366
+}
+
+.bg-green {
+    background: #25D366
+}
+
+.bg-black {
+    background: #000
+}
+
+.bg-icon {
+    background: url(../img/design_skill.jpg) repeat top left
+}
+
+/* rotazione logo */
+.rotateOut {
+    animation: rotateOut .8s forwards
+}
+
+@keyframes rotateOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(180deg)
+    }
+}
+
+/* animazione o */
+#o {
+    position: absolute;
+    border: calc(5px + 1.2vw) solid #343a40;
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    top: 45%;
+    left: 24%
+}
+
+.boxIn {
+    animation: boxIn 1s forwards
+}
+
+@keyframes boxIn {
+    100% {
+        border: calc(5px + 1.2vw) solid #d2d500;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        top: 0;
+        left: 0
+    }
+}
+
+/* home slide */
+.slides,
+.set {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+
+.content {
+    height: 250px;
+    width: 44%;
+    top: 42%;
+    left: 0
+}
+
+.bodytext {
+    padding: 30px;
+}
+
+.image {
+    height: 100%;
+    background-size: cover;
+    background-position: 70%
+}
+
+.title {
+    height: 15vw;
+    width: 44%;
+    top: calc(42% + 250px);
+    left: 0
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 75%
+}
+
+.square {
+    height: 15vw;
+    width: 15vw;
+    max-height: 170px;
+    max-width: 170px;
+    top: calc(42% + 250px);
+    left: 44%;
+    border: calc(5px + 1.2vw) solid #d2d500;
+}
+
+.counter,
+.counter-content {
+    position: absolute;
+    top: calc(42% + 186px);
+    right: calc(58% + 1.75rem);
+    width: 1.5rem;
+    height: 37px;
+    line-height: 37px
+}
+
+#arrows {
+    position: absolute;
+    top: calc(42% + 120px);
+    right: 58%;
+    font-size: 6rem
+}
+
+#arrows a {
+    text-decoration: none
+}
+
+/* animazioni home */
+.theme-swipes > .set {
+    top: 100%;
+    left: 0;
+    transition: transform 1s
+}
+
+.theme-swipes > .set .bodytext {
+    opacity: 0;
+    transition: opacity .3s
+}
+
+.theme-swipes > .set.init {
+    transform: translateY(-100%)
+}
+
+.theme-swipes > .set.init .bodytext {
+    opacity: 1
+}
+
+.theme-swipes > .set.previous {
+    transform: translateY(-200%)
+}
+
+.theme-swipes > .set.previous .bodytext,
+.theme-swipes-fade-out > .set.next .bodytext {
+    opacity: 0
+}
+
+.theme-swipes-fade-out > .set.next {
+    transform: translateX(0)
+}
+
+/* box h2 */
+h2 {
+    position: absolute;
+    font-size: 3.8vw;
+    padding-top: calc(5px + 1.2vw);
+    padding-left: calc(5px + 1.9vw);
+    top: 0
+}
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0
+}
+
+.b-green {
+    border: calc(5px + 1.2vw) solid #25D366;
+}
+
+.b-primary {
+    border: calc(5px + 1.2vw) solid #007bff;
+}
+
+.b-lime {
+    border: calc(5px + 1.2vw) solid #d2d500;
+}
+
+/* scroll menu */
+.quick-nav {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    width: 60px
+}
+
+.quick-nav-item {
+    background: #343a40;
+    display: block;
+    height: 8px;
+    margin: 15px 0 15px 30px
+}
+
+.quick-nav-item.current {
+    background: transparent;
+    margin: 15px 0 15px .5rem;
+    border-bottom: 8px solid #343a40;
+    border-left: 8px solid transparent
+}
+
+/*  tooltip */
+a[data-tooltip][data-placement="right"]:before {
+    top: 0;
+    right: 50px;
+    border-top: 25px solid #000;
+    border-right: 26px solid transparent
+}
+
+a[data-tooltip] {
+    position: relative;
+    transition: 0.5s
+}
+
+a[data-tooltip]:before,
+a[data-tooltip]:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+a[data-tooltip]:after {
+    content: attr(data-tooltip);
+    background: #000;
+    top: 0;
+    right: 76px;
+    font-weight: bold;
+    letter-spacing: .08em;
+    color: #f8f9fa;
+    padding: 0 10px 1px;
+    white-space: nowrap
+}
+
+/* icone di contatto */
+aside {
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+}
+
+aside svg {
+    width: 30px;
+    height: 30px;
+    margin: 15px
+}
+
+#wpp,
+#mail {
+    position: absolute;
+    right: 30px;
+    bottom: 0
+}
+
+#mail {
+    bottom: 60px
+}
+
+#wpp-container {
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    width: calc(100% - 30px);
+    padding: 0 15px
+}
+
+#wpp-input textarea {
+    border: 1px solid #ccc;
+    height: 56px
+}
+
+#wpp-input a {
+    margin-top: calc(1rem + 14px)
+}
+
+.title:after,
+.triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 20px solid #f8f9fa;
+    border-left: 20px solid transparent;
+    margin: 0 0 0 auto
+}
+
+/* swipe card mobile <768px */
+.slide {
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 15px
+}
+
+#swipe3 .slide {
+    margin: 0 30px 30px
+}
+
+/* card design */
+.card {
+    background: linear-gradient(transparent 91px, #fff 0, #fff 100%)
+}
+
+article {
+    position: relative;
+    /*fondamentale per gli after*/
+    flex: 1 0 0;
+    margin: 0 15px
+}
+
+.slides.z--1:after,
+article:after,
+article:before {
+    content: "";
+    position: absolute;
+    height: calc(60px + 1.2vw);
+    width: calc(60px + 1.2vw);
+    top: calc(9vw + 40px + 1.2vw);
+    right: 15px;
+    font-size: 1.5em
+}
+
+article:before {
+    height: calc(40px + 1.2vw);
+    width: calc(40px + 1.2vw);
+    top: 9vw;
+    left: 15px
+}
+
+.slides.z--1:after {
+    right: 30px;
+    top: 35%;
+    border: 15px solid #d2d500
+}
+
+#B article:after,
+#B article:before {
+    border: 15px solid #25D366
+}
+
+#C article:after,
+#C article:before {
+    border: 15px solid #007bff
+}
+
+.cross {
+    position: absolute;
+    height: 40px;
+    width: 10px
+}
+
+.content .cross {
+    top: 15px;
+    right: 30px;
+}
+
+#swipe2 .cross {
+    bottom: 29px;
+    right: 44px
+}
+
+.cross:after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 14px;
+    height: 10px;
+    width: 40px
+}
+
+.content .cross:after {
+    background: #d2d500
+}
+
+#swipe2 .cross:after {
+    background: #007bff
+}
+
+/* comparison */
+#comparison figure {
+    background: url("../img/ritoccata.jpg");
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 100%
+}
+
+#divisor {
+    background: url("../img/originale.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 100%
+}
+
+/* modifica scroll bar comparison */
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 100%;
+    top: -96px;
+    background: rgba(255, 255, 255, 0.1)
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 70px;
+    border: none;
+    outline: none;
+    background: url("../img/x_scroll_arrow.svg") no-repeat center center
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 20px;
+    width: 70px;
+    background: url("../img/x_scroll_arrow.svg") no-repeat center center
+}
+
+/* contenuto generale */
+.z--1 {
+    z-index: -1
+}
+
+.z-0 {
+    z-index: 0
+}
+
+.z-1 {
+    z-index: 1
+}
+
+.z-2 {
+    z-index: 2
+}
+
+.z-3 {
+    z-index: 3
+}
+
+.shadows {
+    box-shadow: 1px 1px 1px #A5B9CC
+}
+
+.rounded-lt {
+    border-radius: 0 .5rem .5rem
+}
+
+.rounded-rb {
+    border-radius: .5rem .5rem 0
+}
+
+main * {
+    border-radius: 0 !important
+}
+
+main section {
+    height: 100vh;
+    position: relative
+}
+
+iframe {
+    height: 50vh;
+    width: 99.9%
+}
+
+#contatti {
+    position: absolute;
+    top: 0
+}
+
+.sfondo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 45vh;
+    width: 0;
+    border-top: 100px solid transparent;
+    border-right: 100vw solid #A5B9CC
+}
+
+#pascoes {
+    background: url(../img/pascoes_mascotte.png) no-repeat center right;
+    background-size: cover
+}
+
+article *,
+footer * {
+    border: none !important
+}
+
+footer .card-deck a {
+    background: #343a40 !important
+}
+
+/* scroll arrow */
+#A {
+    height: calc(100vh - 30px)
+}
+
+#arrow-down {
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 25px);
+    width: 60px;
+    animation: down alternate .6s infinite
+}
+
+@keyframes down {
+    0% {
+        padding-top: 0
+    }
+
+    100% {
+        padding-top: 5px
+    }
+}
+
+/* scroll top button */
+.scroll-top {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    width: 60px;
+    transform: translateY(100%);
+    transition: all 0.3s
+}
+
+.scroll-top svg {
+    margin-left: 18px;
+}
+
+.scroll-top.visible {
+    transform: translateY(0)
+}
+
+/* azioni solo su device touch */
+@media (pointer: coarse) {
+    #A {
+        height: calc(var(--vh, 1vh) * 100 - 30px)
+    }
+}
+
+/* hover messi qui per bloccarli su dispositivi touch */
+@media (hover: hover) and (pointer: fine) {
+
+    .bg-lime:hover,
+    .bg-green:hover {
+        background: #A5B9CC
+    }
+
+    .quick-nav-item:hover {
+        background: transparent;
+        margin: 15px 0 15px .5rem;
+        border-bottom: 8px solid #343a40;
+        border-left: 8px solid transparent
+    }
+
+    a[data-tooltip]:hover:before,
+    a[data-tooltip]:hover:after {
+        display: block
+    }
+
+    .scroll-top:hover {
+        padding-bottom: 4rem
+    }
+
+    aside svg:hover {
+        width: 20px;
+        height: 20px;
+        margin: 20px;
+        transition: .5s
+    }
+
+    footer a:hover {
+        color: #fff
+    }
+}
+
+@media (max-height: 600px) {
+
+    h2 {
+        font-size: 1.8rem
+    }
+}
+
+@media (max-width: 575px) {
+    p {
+        font-size: .9rem
+    }
+
+    h2 {
+        font-size: 6.7vw
+    }
+
+    .content,
+    .title {
+        width: 54%;
+    }
+
+    .square {
+        left: 54%;
+    }
+
+    .counter,
+    .counter-content {
+        right: calc(48% + 1.75rem)
+    }
+
+    #arrows {
+        right: 48%
+    }
+
+    .slides.z--1:after,
+    .title .set {
+        display: none
+    }
+
+    #mail {
+        bottom: 60px;
+        display: none
+    }
+
+    article {
+        flex: 1 0 calc(100vw - 90px)
+    }
+
+    #B article:after,
+    #B article:before {
+        border: 12px solid #25D366;
+    }
+
+    #C article:after,
+    #C article:before {
+        border: 12px solid #007bff;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    h2 {
+        font-size: 5.4vw
+    }
+
+    article {
+        flex: 1 0 calc(50vw - 60px)
+    }
+}
+
+@media (max-width: 767px) {
+    .content p {
+        display: none
+    }
+
+    main section {
+        height: auto
+    }
+
+    #comparison,
+    #pascoes {
+        height: 71vw
+    }
+
+    #swipe,
+    #swipe2,
+    #swipe3 {
+        position: relative;
+        margin: 0 -15px;
+        padding-bottom: 30px;
+        overflow: auto
+    }
+
+    .slide {
+        cursor: pointer
+    }
+
+    input[type=range] {
+        top: -60px
+    }
+
+    #wpp-container,
+    #mail,
+    #wpp {
+        right: 15px
+    }
+}
+
+@media (min-width: 768px) {
+
+    #swipe,
+    #swipe2,
+    #swipe3 {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        margin: 0 30px;
+        overflow: hidden
+    }
+
+    #swipe3 span {
+        opacity: 0;
+    }
+
+    .offset-x {
+        margin: 0 15px
+    }
+}
+
+@media (min-width: 768px) and (min-height: 951px) and (max-width: 1024px) {
+    .content {
+        top: 60%;
+    }
+
+    .title,
+    .square {
+        top: calc(60% + 250px);
+    }
+
+    .counter,
+    .counter-content {
+        top: calc(60% + 186px);
+    }
+
+    #arrows {
+        top: calc(60% + 120px);
+    }
+
+    main section {
+        height: 90vw
+    }
+
+    .sfondo {
+        height: 40vw
+    }
+
+    iframe {
+        height: 30vw
+    }
+}
+
+@media (min-width: 1200px) {
+    .content p {
+        max-width: 80%
+    }
+
+    #home,
+    #swipe,
+    #swipe2,
+    #swipe3,
+    .offset-x,
+    .card-deck {
+        margin: 0 8.333333%
+    }
+
+    article {
+        margin: 0 13px
+    }
+
+    .offset-x.px-30 {
+        padding: 0 15px
+    }
+}
