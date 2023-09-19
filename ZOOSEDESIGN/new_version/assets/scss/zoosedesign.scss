@@ -63,6 +63,10 @@ footer a:hover * {
   transition: all 1s ease;
 }
 
+.z-100 {
+  z-index: 100 !important;
+}
+
 // eliminare bordi al clic, form e imput
 input:not([type="range"]):focus {
   box-shadow: none !important;
