@@ -1,3 +1,5 @@
+@import "colors";
+
 // slider animation
 $timing: 0.5s;
 
@@ -36,6 +38,19 @@ $timing: 0.5s;
         transform: translate(0, 0);
     }
 }
+
+#slider-text:after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 80px;
+    width: 18px;
+    overflow: visible;
+    background-color: $company-100;
+}
+
+
 
 //cloud triangle
 .triangle {

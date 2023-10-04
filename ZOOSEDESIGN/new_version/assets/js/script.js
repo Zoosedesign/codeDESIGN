@@ -154,7 +154,7 @@ function hideArrow(timing) {
 
     const goLeft = [
         { transform: "translateX(0)" },
-        { transform: "translateX(-200px)"},
+        { transform: "translatey(200px)"},
         { transform: "translateX(0)" }
     ]
 

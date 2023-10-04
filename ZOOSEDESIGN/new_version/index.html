@@ -33,13 +33,13 @@
         </section>
 
         <!-- area testo -->
-        <div class="position-absolute top-50 col-6 z-100 ms-4" style="height: 250px;">
-            <div class="d-flex flex-column h-100 bg-day p-4">
-                <article>
-                    <h2>CONTENUTI DI QUALIT&Aacute;</h2>
-                    <p>Per noi l'attenzione al dettaglio è al primo posto! Tu dicci quello che vorresti fare e noi penseremo a tutto il resto ;)</p>
+        <div id="slider-text" class="position-absolute top-50 col-10 col-sm-8 col-md-6 z-100" style="height: 280px;">
+            <div class="d-flex flex-column h-100 bg-day">
+                <article class="p-4 pb-0">
+                    <h2 class="truncate-two">CONTENUTI DI QUALIT&Aacute;</h2>
+                    <p class="truncate-three">Per noi l'attenzione al dettaglio è al primo posto! Tu dicci quello che vorresti fare e noi penseremo a tutto il resto ;)</p>
                 </article>
-                <div class="d-flex position-relative h-25 mt-auto">
+                <div class="d-flex position-relative h-25 mt-auto overflow-hidden p-4 pt-1">
                     <!-- navigazione slider -->
                     <button id="pre" class="border-0 bg-transparent lh-0 ms-auto"
                         style="z-index: 100;" onclick="previousButton()"><span class="arrow-large left"></span></button>
@@ -48,7 +48,6 @@
                         style="z-index: 100;" onclick="nextButton()"><span class="arrow-large right"></span></button>
                 </div>
             </div>
-            <span class="d-block bg-300 w-100 triangle"></span>
         </div>
     </header>
 
