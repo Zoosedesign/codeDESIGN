@@ -39,20 +39,17 @@ $timing: 0.5s;
     }
 }
 
-#slider-text:after {
-    position: absolute;
-    content: "";
+// croce grafica
+#cross-y {
     top: -10px;
-    right: 0;
-    height: 80px;
-    width: 18px;
-    overflow: visible;
-    background-color: $company-100;
+    right: 10px;
+    height: 50px;
+    width: 10px;
 }
 
-
-
-//cloud triangle
-.triangle {
-    border: 25px solid 
+#cross-x {
+    top: 10px;
+    right: -10px;
+    height: 10px;
+    width: 50px;
 }
