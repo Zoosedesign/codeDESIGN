@@ -14,16 +14,19 @@
     <section class="card">
         <div class="search">
             <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img src="./assets/images/search.png" alt="search icon"></button>
+            <button><img src="./assets/images/search.png" alt="search icon" onclick="cityName()"></button>
         </div>
         <div class="weather">
             <img class="weather-icon" src="./assets/images/rain.png" alt="weather icon">
+            <!-- informazioni temperatura -->
             <h1 class="temp">22°c</h1>
+            <!-- nome città ricercata -->
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
                     <img src="./assets/images/humidity.png" alt="humidity icon">
                     <article>
+                        <!-- informazioni umidità -->
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </article>
@@ -31,6 +34,7 @@
                 <div class="col">
                     <img src="./assets/images/wind.png" alt="wind icon">
                     <article>
+                        <!-- informazioni vento -->
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
                     </article>
@@ -39,6 +43,7 @@
         </div>
     </section>
 
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
