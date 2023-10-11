@@ -15,6 +15,8 @@ async function checkWeather(city, apiKey) {
     document.querySelector('.weather img').src=`./assets/images/${data.weather[0].main}.png`;
 
     searchBox.value = '';
+
+    document.querySelector('.weather').style.cssText = 'display: block; transition: all 2s ease';
 }
 
 function cityName() {
