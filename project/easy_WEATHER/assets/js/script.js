@@ -16,7 +16,7 @@ async function checkWeather(city, apiKey) {
 
     searchBox.value = '';
 
-    document.querySelector('.weather').style.cssText = 'display: block; transition: all 2s ease';
+    document.querySelector('.weather').style.display = 'block';
 }
 
 function cityName() {
