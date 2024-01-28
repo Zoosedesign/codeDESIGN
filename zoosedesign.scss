@@ -24,12 +24,18 @@ $gray-800: #343a40;
 $dark: #212529;
 $black: #000;
 
-// ----- STILI GENRALI -----
+// ----- STILI GENERALI -----
 * {
   letter-spacing: 1px !important;
   vertical-align: baseline !important;
   line-height: 1 !important;
   /* la imposta all'altezza del carattere senza spazi extra */
+}
+
+html,
+body {
+  // disabilitare effetto rimbalzo inizio fine scroll
+    overscroll-behavior: none;
 }
 
 // eliminare bordi al clic, form e imput
